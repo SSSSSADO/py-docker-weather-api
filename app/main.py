@@ -7,6 +7,7 @@ API_KEY = os.getenv("API_KEY")
 CITY = "Paris"
 URL = "https://api.weatherapi.com/v1/current.json"
 
+
 def get_weather() -> None:
     params = {
         "key": API_KEY,
@@ -21,6 +22,7 @@ def get_weather() -> None:
     time = now.strftime("%H:%M")
 
     print(f"{country} {date} {time} Weather: {temp} Celsius, {condition}")
+
 
 if __name__ == "__main__":
     get_weather()
